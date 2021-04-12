@@ -56,9 +56,6 @@ h2{
     justify-content: center;
     height: 80px;
 }
-h3{
-    font-size: 25px;
-}
 .groupPhoto{
     display: flex;
     justify-content: center;
@@ -71,8 +68,16 @@ h3{
 }
 /* telephone S, M, L */
 @media (min-width:320px) and (max-width:445px){
+
     .nav{
-        padding-right: 10%;
+        flex-direction: column;
+        justify-content: center;
+        height: 150%;
+        text-align: center;
+    }
+    .listNav{
+        text-align: center;
+        width: 100%;
     }
     .undernav>img{
         width: 20%;
@@ -85,20 +90,75 @@ h3{
         margin-top: -5%;
     }
     .groupPhoto{
-        border: 1px solid green;
         height: 45%;
         width: 60%;
         max-height: 100%;
-
     }
     .groupPhoto>img{
         width: 45%;
         height: 30%;
         margin: 2%;
     }
+    .PORTFOLIO{
+        height: 300px;
+    }
     .undernav{
         height: 70%;
     }
+    h3{
+        font-size: 150%;
+        text-align: center;
+    }
+    .ABOUT{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .forms{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input{
+        margin: 10px;
+    }
+    button{
+        margin: 10px;
+        background-color: red;
+        color: wheat;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+                background-color: rgb(26, 26, 77);
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 250px;
+        height: 350px;
+        margin: 12px;
+    }
+    .copyright{
+        background-color: rgb(14, 14, 49);
+        height: 20px;
+        color: white;
+        text-align: center;
+        font-size: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    i{
+        border:1px solid white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
 }
 /* tablette */
 @media (min-width:426px) and (max-width:768px){
@@ -107,8 +167,83 @@ h3{
         height: 40%;
         margin: auto;
     }
+    .listNav{
+        width: 20%;
+    }
     .undernav{
         height: 70%;
+    }
+    h3{
+        font-size: 150%;
+        text-align: center;
+
+    }
+    .ABOUT{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .paragrapheAbout{
+        display: flex;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+    .forms{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+        width: 60%;
+    }
+    label, input, textarea{
+        margin: 5px;
+
+    }
+    button{
+        width: 10%;
+        margin-left: 1%;
+        background-color: red;
+        color: wheat;
+        border-radius: 10%;
+        padding: 10px;
+        font-size: 50%;
+    }
+    footer{
+        background-color: rgb(26, 26, 77);
+        color: white;
+        font-size: 10px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+    }
+    .freelancer, .johnDaniel{
+        width:30%;
+    }
+    i{
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    .copyright{
+        background-color: rgb(14, 14, 49);
+        height: 20px;
+        color: white;
+        text-align: center;
+        font-size: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 /* laptop M, L et +(4k) */
@@ -117,6 +252,85 @@ h3{
         width: 30%;
         height: 40%;
         margin: auto;
+    }
+    .ABOUT{
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        align-items: center;
+    }
+    .ABOUT>div:last-child{
+        width: 75%;
+        margin: 1%;
+    }
+    h3{
+        font-size: 150%;
+        text-align: center;
+
+    }
+    .paragrapheAbout{
+        display: flex;
+        font-size: x-large;
+        align-content: space-around;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+    .forms{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+        width: 60%;
+    }
+    label, input, textarea{
+        margin: 5px;
+
+    }
+    button{
+        width: 10%;
+        margin-left: 1%;
+        background-color: red;
+        color: wheat;
+        border-radius: 10%;
+        padding: 10px;
+        font-size: 50%;
+    }
+    footer{
+        background-color: rgb(26, 26, 77);
+        color: white;
+        font-size: 10px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 40%;
+        text-align: center;
+    }
+    .freelancer, .johnDaniel{
+        width:30%;
+    }
+    i{
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    .copyright{
+        background-color: rgb(14, 14, 49);
+        height: 20px;
+        color: white;
+        text-align: center;
+        font-size: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
