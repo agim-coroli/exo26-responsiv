@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+/* HEADER  */
+header{
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(20, 20, 56);
+    color:white;
+    height: 50px;
+}
+.STARTCSS{
+    font-size: 15px;
+}
+.listNav{
+    display: flex;
+    font-size: 10px;
+    width: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* UNDER HEADER  */
+.undernav{
+    background-color: rgb(243, 54, 54);
+    color: wheat;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.undernav>img{
+    width: 8%;
+}
+h2{
+    font-size: 200%;
+}
+.undernav>p{
+    margin-top: -1%;
+}
+.PORTFOLIO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 470px;
+}
+.PORTFOLIO>div:first-child{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80px;
+}
+h3{
+    font-size: 25px;
+}
+.groupPhoto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:350px ;
+    max-width: 50%;
+}
+.ABOUT{
+    background-color: #f33636;
+}
+/* telephone S, M, L */
+@media (min-width:320px) and (max-width:445px){
+    .nav{
+        padding-right: 10%;
+    }
+    .undernav>img{
+        width: 20%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .undernav>p{
+        font-size: 100%;
+        margin-top: -5%;
+    }
+    .groupPhoto{
+        border: 1px solid green;
+        height: 45%;
+        width: 60%;
+        max-height: 100%;
+
+    }
+    .groupPhoto>img{
+        width: 45%;
+        height: 30%;
+        margin: 2%;
+    }
+    .undernav{
+        height: 70%;
+    }
+}
+/* tablette */
+@media (min-width:426px) and (max-width:768px){
+    .groupPhoto>img{
+        width: 30%;
+        height: 40%;
+        margin: auto;
+    }
+    .undernav{
+        height: 70%;
+    }
+}
+/* laptop M, L et +(4k) */
+@media (min-width:769px){
+    .groupPhoto>img{
+        width: 30%;
+        height: 40%;
+        margin: auto;
+    }
+}
+
+/* 320 et 425 phone max */
+/* 426 et 768 tablet max */
+/* 769 et 1024 laptop max */
+/* 1025 et 1440 laptop L max */
